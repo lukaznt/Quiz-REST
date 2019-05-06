@@ -1,0 +1,177 @@
+{
+	"info": {
+		"_postman_id": "23a8ec70-10b5-4898-9ac2-b96f3ddda50a",
+		"name": "questions@localhost",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/quiz-rest-services/rest/questions/",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": " {\n        \"content\": \"What is Java?\"\n }"
+				},
+				"url": {
+					"raw": "http://localhost:8080/quiz-rest-services/rest/questions/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"quiz-rest-services",
+						"rest",
+						"questions",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/quiz-rest-services/rest/questions/",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": " {\n        \"id\": 1,\n        \"content\": \"What is Java?\"\n }"
+				},
+				"url": {
+					"raw": "http://localhost:8080/quiz-rest-services/rest/questions/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"quiz-rest-services",
+						"rest",
+						"questions",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/quiz-rest-services/rest/questions/test",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": " {\n        \"id\": 1,\n        \"content\": \"What is Java?\"\n }"
+				},
+				"url": {
+					"raw": "http://localhost:8080/quiz-rest-services/rest/questions/JPA",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"quiz-rest-services",
+						"rest",
+						"questions",
+						"JPA"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/quiz-rest-services/rest/questions/",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\n        \"id\": 6,\n        \"content\": \"What is NOT the JPA equivalent of hibernate.cfg.xml file?\"\n    }"
+				},
+				"url": {
+					"raw": "http://localhost:8080/quiz-rest-services/rest/questions/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"quiz-rest-services",
+						"rest",
+						"questions",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/quiz-rest-services/rest/questions/1",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\t\n\t\"id\": 77,\n\t\"content\": \"Which annotation is used for Is-A mapping?\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/quiz-rest-services/rest/questions/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"quiz-rest-services",
+						"rest",
+						"questions",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
