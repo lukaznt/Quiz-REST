@@ -1,0 +1,142 @@
+{
+	"info": {
+		"_postman_id": "a5a1978e-b38a-446e-8415-a26333ce6035",
+		"name": "choices@localhost",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/quiz-rest-services/rest/questions/",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \"text\": \"@ParentKey\",\n        \"valid\": false,\n        \"qid\": 2\n    }"
+				},
+				"url": {
+					"raw": "http://localhost:8080/quiz-rest-services/rest/choices/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"quiz-rest-services",
+						"rest",
+						"choices",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/quiz-rest-services/rest/questions/",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": " {\n        \"id\": 1,\n        \"content\": \"What is Java?\"\n }"
+				},
+				"url": {
+					"raw": "http://localhost:8080/quiz-rest-services/rest/choices/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"quiz-rest-services",
+						"rest",
+						"choices",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/quiz-rest-services/rest/questions/",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\n        \"id\": 6,\n        \"text\": \"@JointKey\",\n        \"valid\": false,\n        \"qid\": 2\n    }"
+				},
+				"url": {
+					"raw": "http://localhost:8080/quiz-rest-services/rest/choices/6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"quiz-rest-services",
+						"rest",
+						"choices",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/quiz-rest-services/rest/questions/1",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\n        \"id\": 6,\n        \"text\": \"@JointKey\",\n        \"valid\": false,\n        \"qid\": 2\n    }"
+				},
+				"url": {
+					"raw": "http://localhost:8080/quiz-rest-services/rest/choices/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"quiz-rest-services",
+						"rest",
+						"choices",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
